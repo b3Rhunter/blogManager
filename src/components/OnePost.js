@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom";
 import sanityClient from "../client.js";
 import BlockContent from "@sanity/block-content-to-react";
 import imageUrlBuilder from "@sanity/image-url";
-import style from "./myCss.css";
+import "./myCss.css";
 
 const builder = imageUrlBuilder(sanityClient);
 function urlFor(source) {
@@ -43,7 +43,7 @@ export default function OnePost() {
         <div className="relative">
           <div className="absolute h-full w-full flex items-center justify-left p-2">
             {/* Title Section */}
-            <div className="p-3" style={{marginTop: "400px", marginLeft: "50px", borderRadius: "25%", border: "5px solid", backgroundColor: "#000", opacity: "80%"}}>
+            <div className="p-3" style={{marginTop: "400px", marginLeft: "50px", borderRadius: "10px", border: "5px solid", backgroundColor: "#000", opacity: "80%"}}>
               <h2 className="cursive text-2xl lg:text-3xl mb-2 text-white">
                 {postData.title}
               </h2>

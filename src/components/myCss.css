@@ -8,17 +8,52 @@
     radial-gradient(at 60% 69%, hsla(0,77%,50%,0.36) 0px, transparent 50%);
 }
 
-.payButton {
-    background-color: rgb(182, 17, 17);
+.button {
+    background-color: #d02128;
     border: 1px solid;
-    border-color: whitesmoke;
-    color: black;
-    border-radius: 10px;
+    border-color: #313131;
+    color: #fff;
+    border-radius: 5px;
     padding: 5px 10px 5px 10px;
-    margin: 10px;
     z-index: 10;
+    margin-bottom: 12px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 15%;
 }
 
 .content {
     color:antiquewhite;
 }
+
+.flag {
+-webkit-box-shadow: 3px 3px 10px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 3px 3px 10px 0px rgba(0,0,0,0.75);
+box-shadow: 3px 3px 10px 0px rgba(0,0,0,0.75);
+}
+
+.logo {
+display: block;
+margin-left: auto;
+margin-right: auto;
+width: 20%;
+margin-top: -25px;
+
+}
+
+@media only screen and (max-width: 600px) {
+   .logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    margin-top: -25px;
+    }
+    .payButton {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+    }
+  }
