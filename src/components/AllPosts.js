@@ -158,7 +158,8 @@ async function PayperView() {
                         display: "block",
                         marginLeft: "auto",
                         marginRight: "auto",
-                        width: "15%"
+                        width: "15%",
+                        minWidth: "175px"
                        }}
                        type="primary" danger loading={isLoading} className="block relative flex justify-end items-end" onClick={Approve}>Approve Bank</Button>
                        ) : (
@@ -168,7 +169,8 @@ async function PayperView() {
                           display: "block",
                           marginLeft: "auto",
                           marginRight: "auto",
-                          width: "15%"
+                          width: "15%",
+                          minWidth: "175px"
                          }}
                         type="primary" danger loading={isLoading} className="block relative flex justify-end items-end" onClick={PayperView}>Bank-Per-View</Button>
         )}
