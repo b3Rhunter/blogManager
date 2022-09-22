@@ -129,14 +129,17 @@ async function PayperView() {
 
 
       {show ? (
-        <Button type="primary" danger loading={isLoading} onClick={connect}>
+        <Button type="primary" danger loading={isLoading} onClick={connect} size="large" shape="round"
+        style={{position: "absolute", top: "10", left: "10"}}
+        >
           
             connect
         
         </Button>
 
       ) : (
-        <Button type="primary" danger loading={isLoading} onClick={connect}>
+        <Button type="primary" danger loading={isLoading} onClick={connect} size="large" shape="round"
+        style={{position: "absolute", top: "10", left: "10" }}>
         
          {name}
    
