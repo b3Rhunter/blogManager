@@ -194,7 +194,7 @@ async function PayperView() {
                    
                     {isAuth && (
                       <Link to={"/" + post.slug.current} key={post.slug.current}>
-                        <button className="block relative flex justify-end items-end viewButton rounded shadow">view</button>
+                        <Button type="primary" danger className="block relative flex justify-end items-end">view</Button>
                       </Link>
                     )}
                     </span>
